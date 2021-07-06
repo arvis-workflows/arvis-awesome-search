@@ -1,0 +1,30 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jopemachine/arvis-extension-validator/master/workflow-schema.json",
+  "category": "Productivity",
+  "creator": "importre",
+  "description": "Search awesome projects!",
+  "name": "arvis-awesome-search",
+  "defaultIcon": "icon.png",
+  "readme": "Search awesome projects!",
+  "version": "0.0.2",
+  "webAddress": "https://github.com/jopemachine/arvis-awesome-search",
+  "enabled": true,
+  "commands": [
+    {
+      "type": "scriptFilter",
+      "title": "Search awesome projects",
+      "command": "awe",
+      "scriptFilter": "node index.js {query}",
+      "runningSubtext": "Hold on a sec until script work is done...",
+      "argType": "optional",
+      "withspace": true,
+      "actions": [
+        {
+          "type": "open",
+          "modifiers": "normal",
+          "target": "{query}"
+        }
+      ]
+    }
+  ]
+}

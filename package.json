@@ -1,0 +1,32 @@
+{
+  "name": "arvis-awesome-search",
+  "version": "0.0.2",
+  "description": "Arvis workflow to find awesome projects",
+  "license": "MIT",
+  "repository": "importre/arvis-awe",
+  "author": {
+    "name": "Jaewe Heo",
+    "email": "jaeweheo@gmail.com",
+    "url": "importre.com"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "postinstall": "arvish-init",
+    "preuninstall": "arvish-cleanup"
+  },
+  "files": [
+    "index.js",
+    "icon.png",
+    "arvis-workflow.json"
+  ],
+  "keywords": [
+    "arvis",
+    "awesome"
+  ],
+  "dependencies": {
+    "arvish": ">=0.4.6",
+    "got": "^6.6.3"
+  }
+}
